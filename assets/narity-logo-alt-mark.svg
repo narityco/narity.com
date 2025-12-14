@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Narity logo with N mark">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4fb3ff"/>
+      <stop offset="100%" stop-color="#7affc6"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="300" height="64" rx="10" fill="transparent"/>
+
+  <!-- Mark: stylized N made of two diagonals and a link motif -->
+  <g transform="translate(12,8)">
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="#0b0d10" stroke="#232933"/>
+    <path d="M10 36 L10 14 L18 14 L30 30 L30 14 L38 14 L38 36 L30 36 L18 20 L18 36 Z" fill="url(#grad)" filter="url(#s)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(72,45)" fill="#e8eef5">
+    <text x="0" y="0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="0.4">Narity</text>
+  </g>
+</svg>
