@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logo Options — Narity Limited</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      .swatch { background: #0b0d10; border: 1px solid #232933; border-radius: 12px; padding: 16px; }
+      .rowx { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+      .on-dark { background: #0b0d10; padding: 12px; border-radius: 10px; border: 1px solid #232933; }
+      .size { display: grid; gap: 8px; }
+      .size label { color: var(--muted); font-size: 14px; }
+      .mark-only { display: grid; grid-template-columns: repeat(6, 40px); gap: 10px; align-items: center; }
+      .mark-only div { background: #0b0d10; border: 1px solid #232933; border-radius: 8px; display: grid; place-items: center; height: 40px; }
+      .mark-only img { display: block; height: 22px; }
+      .grid-auto { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      .card h3 { display: flex; align-items: center; justify-content: space-between; }
+      code { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="index.html">Narity Limited</a>
+        <nav class="nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Logo options</h1>
+          <p class="lead">Three alternatives designed for the dark header. Review below and pick one.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-auto">
+          <div class="card">
+            <h3>Alt 1 — Wordmark only <code>assets/narity-logo-alt-wordmark.svg</code></h3>
+            <div class="size">
+              <label>Header size (~28px tall)</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-wordmark.svg" alt="Wordmark" style="height:28px"/></div>
+              <label>Wide</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-wordmark.svg" alt="Wordmark" style="height:44px"/></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Alt 2 — N mark + wordmark <code>assets/narity-logo-alt-mark.svg</code></h3>
+            <div class="size">
+              <label>Header size (~28px tall)</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-mark.svg" alt="N mark + wordmark" style="height:28px"/></div>
+              <label>Wide</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-mark.svg" alt="N mark + wordmark" style="height:44px"/></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Alt 3 — Flow mark + wordmark <code>assets/narity-logo-alt-flow.svg</code></h3>
+            <div class="size">
+              <label>Header size (~28px tall)</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-flow.svg" alt="Flow mark + wordmark" style="height:28px"/></div>
+              <label>Wide</label>
+              <div class="on-dark"><img src="assets/narity-logo-alt-flow.svg" alt="Flow mark + wordmark" style="height:44px"/></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Favicon candidates</h3>
+            <div class="mark-only">
+              <div><img src="assets/favicon.svg" alt="Current favicon"/></div>
+              <div><img src="assets/narity-logo-alt-mark.svg" alt="Mark"/></div>
+              <div><img src="assets/narity-logo-alt-flow.svg" alt="Flow"/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container row between center">
+        <small>Narity Limited. All rights reserved.</small>
+      </div>
+    </footer>
+  </body>
+  </html>
