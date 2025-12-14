@@ -50,6 +50,8 @@ a:hover { text-decoration: underline; }
 .nav-link:hover { color: var(--text); }
 .nav-link.active { color: var(--text); border-bottom-color: var(--accent); }
 
+.brand-logo { height: 28px; display: block; }
+
 .hero {
   padding: 64px 0 40px;
   background:

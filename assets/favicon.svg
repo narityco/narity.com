@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Narity mark">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#4fb3ff"/>
@@ -6,6 +6,6 @@
     </linearGradient>
   </defs>
   <rect width="64" height="64" rx="12" fill="#0b0d10"/>
-  <path d="M16 42c0-10 8-18 18-18h6v-6h8v28h-8v-12h-6c-6.627 0-12 5.373-12 12h-6z" fill="url(#g)"/>
-  <circle cx="22" cy="22" r="4" fill="#e8eef5"/>
+  <!-- Stylized N mark to match Alt 2 logo -->
+  <path d="M16 44 L16 20 L22 20 L36 38 L36 20 L42 20 L42 44 L36 44 L22 26 L22 44 Z" fill="url(#g)"/>
 </svg>

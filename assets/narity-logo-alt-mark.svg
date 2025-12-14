@@ -17,7 +17,8 @@
   </g>
 
   <!-- Wordmark -->
-  <g transform="translate(72,45)" fill="#e8eef5">
-    <text x="0" y="0" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="0.4">Narity</text>
+  <!-- Align baseline with mark center: center text vertically within 64px canvas -->
+  <g transform="translate(72,32)" fill="#e8eef5">
+    <text x="0" y="0" dominant-baseline="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="0.6">NARITY</text>
   </g>
 </svg>
