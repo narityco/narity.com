@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Narity Limited — Payment Systems</title>
+    <meta name="description" content="Narity Limited builds modern, reliable payment systems for businesses." />
+    <meta property="og:title" content="Narity Limited — Payment Systems" />
+    <meta property="og:description" content="Modern, reliable payment solutions for growing businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="./" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="index.html">Narity Limited</a>
+        <nav class="nav">
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Payments, made simple and secure</h1>
+          <p class="lead">
+            Narity Limited helps businesses accept, route, and reconcile payments with
+            reliability and speed.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="contact.html">Talk to us</a>
+            <a class="btn" href="about.html">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container grid three">
+          <div class="card">
+            <h3>Acquiring & Gateways</h3>
+            <p>Integrations with leading providers to accept cards and alternative payment methods.</p>
+          </div>
+          <div class="card">
+            <h3>Routing & Optimization</h3>
+            <p>Smart routing to improve authorization rates and reduce processing costs.</p>
+          </div>
+          <div class="card">
+            <h3>Reconciliation</h3>
+            <p>Automated reconciliation and reporting for accurate, timely financial operations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust">
+        <div class="container row center">
+          <div class="trust-copy">
+            <h2>Built for trust and scale</h2>
+            <p>
+              We follow industry best practices around security, availability, and observability to
+              keep your payments flowing.
+            </p>
+            <ul class="checklist">
+              <li>Security-first design</li>
+              <li>High availability architectures</li>
+              <li>Transparent monitoring & reporting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container row between center">
+        <small>© <span id="year"></span> Narity Limited. All rights reserved.</small>
+        <div class="footer-nav">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
