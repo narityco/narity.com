@@ -44,6 +44,7 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 .brand { font-weight: 700; letter-spacing: 0.3px; color: var(--text); padding: 14px 0; display: inline-block; }
+.brand-logo { height: 28px; width: auto; display: block; }
 .nav { display: flex; gap: 16px; }
 .nav-link { color: var(--muted); padding: 14px 6px; border-bottom: 2px solid transparent; }
 .nav-link:hover { color: var(--text); }
