@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Narity Limited — Payment Systems</title>
-    <meta name="description" content="Narity Limited builds modern, reliable payment systems for businesses." />
-    <meta property="og:title" content="Narity Limited — Payment Systems" />
-    <meta property="og:description" content="Modern, reliable payment solutions for growing businesses." />
+    <title>Narity — Software Consulting</title>
+    <meta name="description" content="Narity helps businesses build reliable, scalable software systems." />
+    <meta property="og:title" content="Narity — Software Consulting" />
+    <meta property="og:description" content="Expert software consulting for modern businesses." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="./" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,62 +17,113 @@
   <body>
     <header class="site-header">
       <div class="container row between center">
-        <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/narity-logo-alt-wordmark.svg" alt="Narity Limited" />
+        <a class="brand" href="#home">
+          <img class="brand-logo" src="assets/narity-logo-alt-wordmark.svg" alt="Narity" />
         </a>
         <nav class="nav">
-          <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="container">
-          <h1>Payments, made simple and secure</h1>
+          <h1>Software that works,<br/>so you can focus on your business</h1>
           <p class="lead">
-            Narity Limited helps businesses accept, route, and reconcile payments with
-            reliability and speed.
+            Narity is a software consulting company that helps businesses design, build, and maintain
+            reliable systems that scale.
           </p>
           <div class="cta">
-            <a class="btn primary" href="contact.html">Talk to us</a>
-            <a class="btn" href="about.html">Learn more</a>
+            <a class="btn primary" href="#contact">Work with us</a>
+            <a class="btn" href="#services">What we do</a>
           </div>
         </div>
       </section>
 
-      <section class="features">
-        <div class="container grid three">
-          <div class="card">
-            <h3>Acquiring & Gateways</h3>
-            <p>Integrations with leading providers to accept cards and alternative payment methods.</p>
-          </div>
-          <div class="card">
-            <h3>Routing & Optimization</h3>
-            <p>Smart routing to improve authorization rates and reduce processing costs.</p>
-          </div>
-          <div class="card">
-            <h3>Reconciliation</h3>
-            <p>Automated reconciliation and reporting for accurate, timely financial operations.</p>
+      <section id="services" class="services">
+        <div class="container">
+          <h2 class="section-title">What we do</h2>
+          <div class="grid three">
+            <div class="card">
+              <h3>Architecture & Design</h3>
+              <p>We design systems that are maintainable, scalable, and aligned with your business goals.</p>
+            </div>
+            <div class="card">
+              <h3>Cloud & Infrastructure</h3>
+              <p>Kubernetes, AWS, GCP — we build and run infrastructure that just works.</p>
+            </div>
+            <div class="card">
+              <h3>Backend Development</h3>
+              <p>Go, Java, .NET, Node.js — we build high-performance APIs and services.</p>
+            </div>
+            <div class="card">
+              <h3>Data Engineering</h3>
+              <p>Pipelines, analytics, and real-time systems that turn your data into insight.</p>
+            </div>
+            <div class="card">
+              <h3>Observability</h3>
+              <p>Monitoring, tracing, and logging so you know what's happening in production.</p>
+            </div>
+            <div class="card">
+              <h3>Technical Audits</h3>
+              <p>Code reviews and architecture assessments to identify risks and opportunities.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="trust">
-        <div class="container row center">
-          <div class="trust-copy">
-            <h2>Built for trust and scale</h2>
-            <p>
-              We follow industry best practices around security, availability, and observability to
-              keep your payments flowing.
+      <section id="about" class="about">
+        <div class="container grid two">
+          <div>
+            <h2 class="section-title">Why work with us</h2>
+            <p class="lead-alt">
+              We bring deep engineering expertise and a pragmatic approach. We don't over-engineer —
+              we solve your actual problems.
             </p>
             <ul class="checklist">
-              <li>Security-first design</li>
-              <li>High-availability architectures</li>
-              <li>Transparent monitoring & reporting</li>
+              <li>Engineering-first mindset</li>
+              <li>Security baked in from day one</li>
+              <li>Clear communication, no jargon</li>
+              <li>Long-term thinking over quick fixes</li>
             </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects delivered</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Let's talk</h2>
+          <p class="lead-alt center">Tell us about your project — we'll get back within 1–2 business days.</p>
+          <div class="contact-wrapper">
+            <form class="contact-form" method="post" action="https://formspree.io/f/mnnerbvd">
+              <label>
+                <span>Your name</span>
+                <input type="text" name="name" required/>
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required/>
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+              <button class="btn primary" type="submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
@@ -81,8 +131,8 @@
 
     <footer class="site-footer">
       <div class="container row between center">
-        <small>Narity Limited. All rights reserved.</small>
+        <small>&copy; 2026 Narity Limited. All rights reserved.</small>
       </div>
     </footer>
   </body>
-  </html>
+</html>
