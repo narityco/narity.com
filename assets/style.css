@@ -355,9 +355,9 @@ small { color: var(--muted); }
   .hero-visual { max-width: 400px; margin: 0 auto; }
 }
 
-/* --- Mobile (<=640px) --- */
+/* --- Mobile (<=768px) --- */
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .container { padding: 0 16px; }
 
   /* Hamburger nav */
