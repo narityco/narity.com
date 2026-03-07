@@ -8,6 +8,7 @@
     <meta property="og:title" content="Narity — Software Consulting" />
     <meta property="og:description" content="Expert software consulting for modern businesses." />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-1-codeflow.svg" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +21,9 @@
         <a class="brand" href="#home">
           <img class="brand-logo" src="assets/narity-logo-alt-wordmark.svg" alt="Narity" />
         </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <nav class="nav">
           <a class="nav-link" href="#home">Home</a>
           <a class="nav-link" href="#services">Services</a>
@@ -157,5 +161,21 @@
         <small>&copy; 2026 Narity Limited. All rights reserved.</small>
       </div>
     </footer>
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.addEventListener('click', (e) => {
+        if (e.target.classList.contains('nav-link')) {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -5,7 +5,7 @@
       <stop offset="100%" style="stop-color:#7affc6;stop-opacity:0.2" />
     </linearGradient>
   </defs>
-  <rect width="500" height="350" fill="url(#g1)" rx="12"/>
+  <rect width="500" height="350" fill="transparent" rx="12"/>
   
   <text x="60" y="80" font-family="monospace" font-size="14" fill="#e8eef5" opacity="0.8">
     <tspan fill="#4fb3ff">func</tspan> <tspan fill="#7affc6">main</tspan>() {
