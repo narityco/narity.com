@@ -472,6 +472,26 @@ section:last-of-type { min-height: auto; padding-bottom: 96px; }
 }
 .error-page .lead { max-width: none; margin: 0 0 32px; }
 
+/* --- Legal pages (privacy, terms) --- */
+
+.legal { padding: 48px 0 64px; }
+.legal .container { max-width: 820px; }
+.legal .section-title { margin-bottom: 16px; }
+.legal-meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+.legal h2 {
+  font-size: clamp(18px, 2.6vw, 22px);
+  margin: 32px 0 8px;
+  color: var(--text);
+}
+.legal p { color: var(--muted); }
+.legal strong { color: var(--text); }
+.legal-list { color: var(--muted); padding-left: 20px; margin: 8px 0 16px; }
+.legal-list li { margin: 6px 0; }
+.legal-list li strong { color: var(--text); }
+
+.footer-link { color: var(--muted); }
+.footer-link:hover { color: var(--accent-2); }
+
 small { color: var(--muted); }
 
 /* --- Tablet (<=860px) --- */
