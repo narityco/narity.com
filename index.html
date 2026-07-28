@@ -155,7 +155,7 @@
           <h2 class="section-title">Let's talk</h2>
           <p class="lead-alt center">Tell us about your project — we'll get back within 1–2 business days.</p>
           <div class="contact-wrapper">
-            <form class="contact-form" method="post" action="https://formspree.io/f/mnnerbvd">
+            <form class="contact-form" method="post" action="https://smtp.ataca.io/f/01kykwbt3gazc8vpdfx21a37ny">
               <label>
                 <span>Your name</span>
                 <input type="text" name="name" required/>
@@ -168,6 +168,8 @@
                 <span>Message</span>
                 <textarea name="message" rows="5" required></textarea>
               </label>
+              <!-- honeypot: hidden from humans; a filled value drops the submission -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"/>
               <button class="btn primary" type="submit">Send</button>
             </form>
           </div>
