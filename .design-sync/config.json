@@ -1,0 +1,11 @@
+{
+  "projectId": "90a9910a-fbd8-45f3-a74f-d51492882bc9",
+  "pkg": "narity-brand",
+  "globalName": "NarityBrand",
+  "shape": "package",
+  "cssEntry": "styles.css",
+  "tokensPkg": "narity-brand",
+  "tokensGlob": "tokens/*.css",
+  "guidelinesGlob": "*.md",
+  "readmeHeader": ".design-sync/conventions.md"
+}
