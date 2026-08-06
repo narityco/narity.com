@@ -1,0 +1,19 @@
+/* narity.com design tokens — mirrored from the :root block of assets/style.css,
+   which stays the single source of truth. Keep the two in step. */
+:root {
+  /* Surfaces */
+  --bg: #0b0d10;      /* page ground — every section sits on this */
+  --panel: #12161b;   /* raised surface: cards, stats, product rows */
+
+  /* Text */
+  --text: #e8eef5;    /* primary copy, headings */
+  --muted: #b7c2cf;   /* secondary copy, labels, nav at rest */
+
+  /* Brand accents */
+  --accent: #4fb3ff;  /* primary blue — links, focus, primary button */
+  --accent-2: #7affc6; /* mint — second stop of every brand gradient */
+
+  /* Lines & depth */
+  --border: #232933;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}

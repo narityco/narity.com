@@ -1,0 +1,10 @@
+{
+  "name": "narity-brand",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Brand/style layer of narity.com, packaged for claude.ai/design. Ships no components — the real source of truth is ../../assets/style.css.",
+  "type": "module",
+  "module": "./index.js",
+  "main": "./index.js",
+  "sideEffects": false
+}
