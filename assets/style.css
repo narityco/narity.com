@@ -488,6 +488,18 @@ section:last-of-type { min-height: auto; padding-bottom: 96px; }
 .legal-list { color: var(--muted); padding-left: 20px; margin: 8px 0 16px; }
 .legal-list li { margin: 6px 0; }
 .legal-list li strong { color: var(--text); }
+/* Sub-headings, for legal pages that ask questions (a support FAQ) rather than
+   numbering clauses. One step below h2, on the same rhythm. */
+.legal h3 {
+  font-size: clamp(15px, 2.1vw, 17px);
+  margin: 22px 0 6px;
+  color: var(--text);
+}
+.legal hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 40px 0 8px;
+}
 
 .footer-link { color: var(--muted); }
 .footer-link:hover { color: var(--accent-2); }
