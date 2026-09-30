@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crystal Reports migration to .NET — Reporter by Narity</title>
+    <meta
+      name="description"
+      content="Migrate off Crystal Reports without rewriting a report. Reporter, a Crystal Reports alternative for .NET, runs your .rpt files and renders the same PDFs."
+    />
+    <link rel="canonical" href="https://narity.com/reporter/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Narity" />
+    <meta property="og:title" content="Crystal Reports migration to .NET — Reporter by Narity" />
+    <meta
+      property="og:description"
+      content="Migrate off Crystal Reports without rewriting a report. Reporter runs your .rpt files on .NET 10 and renders the same PDFs, with no SAP runtime."
+    />
+    <meta property="og:url" content="https://narity.com/reporter/" />
+    <meta property="og:image" content="https://narity.com/assets/og-reporter.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Reporter: keep your Crystal Reports, drop the SAP runtime." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Narity", "item": "https://narity.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Reporter", "item": "https://narity.com/reporter/" }
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Reporter",
+            "description": "A Crystal Reports alternative for .NET. It runs existing .rpt files without the SAP runtime and renders the same PDF.",
+            "url": "https://reporter.narity.com/",
+            "image": "https://narity.com/assets/og-reporter.png",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Windows, macOS, Linux",
+            "softwareRequirements": ".NET 10",
+            "publisher": { "@type": "Organization", "name": "Narity Limited", "url": "https://narity.com/" }
+          }
+        ]
+      }
+    </script>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Absolute paths: this page sits one level down, so a relative "assets/…" would resolve to
+         /reporter/assets/. -->
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="/">
+          <img class="brand-logo" src="/assets/narity-logo-alt-wordmark.svg" alt="Narity" />
+        </a>
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link active" href="/reporter/" aria-current="page">Reporter</a>
+          <a class="nav-link" href="/#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="landing">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Crystal Reports migration, without rewriting your reports</h1>
+            <p class="lead">
+              Reporter is a Crystal Reports alternative for .NET. It reads the <code>.rpt</code> files you already
+              have and renders the same PDFs on .NET 10, on Windows, macOS, or Linux, with no SAP runtime.
+            </p>
+            <div class="cta">
+              <a class="btn primary" href="https://reporter.narity.com/demo.html">Try it on your report</a>
+              <a class="btn" href="https://reporter.narity.com/register.html">Start a 30-day evaluation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid two">
+          <div>
+            <h2 class="section-title">Why teams leave the Crystal runtime</h2>
+            <p class="lead-alt">
+              The reports still work. The runtime underneath them is the problem, and rewriting every report in
+              another tool is the expensive part of moving on.
+            </p>
+          </div>
+          <ul class="checklist">
+            <li>SAP discontinued the 32-bit Crystal Reports runtime for .NET in December 2025.</li>
+            <li>Mainstream maintenance of Crystal Reports for Visual Studio ends after 2027.</li>
+            <li>The SAP runtime runs on Windows only, so reporting holds your servers there.</li>
+            <li>A migration to another report tool means redesigning each report by hand.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">How Reporter replaces it</h2>
+          <div class="grid three">
+            <div class="card">
+              <h3>Reads .rpt files directly</h3>
+              <p>A clean-room decoder reads the Crystal Reports file format itself. No SAP runtime, no conversion step.</p>
+            </div>
+            <div class="card">
+              <h3>Renders the same PDF</h3>
+              <p>Fonts, groups, formulas, subreports, and page breaks are placed to the twip and checked against the PDF that Crystal produced.</p>
+            </div>
+            <div class="card">
+              <h3>Reads your live data</h3>
+              <p>PostgreSQL, Oracle, and SQLite through managed drivers, or the rows saved inside the report file.</p>
+            </div>
+            <div class="card">
+              <h3>Runs where .NET runs</h3>
+              <p>.NET 10 libraries for Windows, macOS, and Linux, plus a desktop viewer for all three.</p>
+            </div>
+            <div class="card">
+              <h3>Keeps your formulas</h3>
+              <p>Crystal formulas run as written. A function the engine does not support yet is named before you go live.</p>
+            </div>
+            <div class="card">
+              <h3>Gives you the definition</h3>
+              <p>Each report converts to an open JSON definition that you own and can keep in version control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">A migration in three steps</h2>
+          <div class="grid three steps">
+            <div class="card">
+              <h3>Measure</h3>
+              <p>Run your reports through Reporter and compare every page with the PDFs Crystal produces today.</p>
+            </div>
+            <div class="card">
+              <h3>Close the gaps</h3>
+              <p>Narity fixes what differs, report by report, until the pages match.</p>
+            </div>
+            <div class="card">
+              <h3>Switch</h3>
+              <p>Replace the Crystal runtime calls in your application with Reporter's .NET API, then retire the SAP runtime.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title">Plan your migration</h2>
+          <p class="lead-alt">
+            Tell us how many reports you have and where they run. Or read more about
+            <a href="https://reporter.narity.com/">Reporter, the Crystal Reports alternative for .NET</a>.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="/#contact">Talk to Narity</a>
+            <a class="btn" href="https://reporter.narity.com/examples.html">See the .NET code</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container row between center">
+        <small>&copy; 2026 Narity Limited. All rights reserved.</small>
+        <small><a class="footer-link" href="/privacy.html">Privacy</a></small>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+    </script>
+  </body>
+</html>

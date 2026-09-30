@@ -501,6 +501,18 @@ section:last-of-type { min-height: auto; padding-bottom: 96px; }
   margin: 40px 0 8px;
 }
 
+/* --- Product landing pages (/reporter/) --- */
+/* Short sections: the home page's full-screen sections would leave most of each screen empty. */
+.landing section { min-height: auto; padding: 56px 0; }
+.landing .hero { padding-top: 72px; }
+.landing .hero h1 { max-width: 900px; }
+.landing .lead-alt { max-width: 720px; }
+.landing code { font-size: 0.92em; color: var(--text); }
+/* A link inside running text needs more than colour to stand out from it. */
+.landing p a { text-decoration: underline; text-underline-offset: 3px; }
+.steps { counter-reset: step; }
+.steps h3::before { counter-increment: step; content: counter(step) ". "; color: var(--accent); }
+
 .footer-link { color: var(--muted); }
 .footer-link:hover { color: var(--accent-2); }
 
