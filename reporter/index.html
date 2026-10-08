@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crystal Reports migration to .NET — Reporter by Narity</title>
+    <title>Crystal Reports migration service — Narity</title>
     <meta
       name="description"
-      content="Migrate off Crystal Reports without rewriting a report. Reporter, a Crystal Reports alternative for .NET, runs your .rpt files and renders the same PDFs."
+      content="Narity moves your applications off the Crystal Reports runtime without rewriting a report. We use Narity Reporter and compare every page before you switch."
     />
     <link rel="canonical" href="https://narity.com/reporter/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Narity" />
-    <meta property="og:title" content="Crystal Reports migration to .NET — Reporter by Narity" />
+    <meta property="og:title" content="Crystal Reports migration service — Narity" />
     <meta
       property="og:description"
-      content="Migrate off Crystal Reports without rewriting a report. Reporter runs your .rpt files on .NET 10 and renders the same PDFs, with no SAP runtime."
+      content="Narity moves your applications off the Crystal Reports runtime without rewriting a report. Keep your .rpt files, render them on .NET 10, and retire the SAP runtime."
     />
     <meta property="og:url" content="https://narity.com/reporter/" />
     <meta property="og:image" content="https://narity.com/assets/og-reporter.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Reporter: keep your Crystal Reports, drop the SAP runtime." />
+    <meta property="og:image:alt" content="Narity Reporter: keep your Crystal Reports, drop the SAP runtime." />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="application/ld+json">
       {
@@ -30,16 +30,16 @@
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Narity", "item": "https://narity.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Reporter", "item": "https://narity.com/reporter/" }
+              { "@type": "ListItem", "position": 2, "name": "Crystal Reports migration", "item": "https://narity.com/reporter/" }
             ]
           },
           {
             "@type": "SoftwareApplication",
             "@id": "https://reporter.narity.com/#software",
-            "name": "Reporter",
-            "description": "A Crystal Reports alternative for .NET. It runs existing .rpt files without the SAP runtime and renders the same PDF.",
+            "name": "Narity Reporter",
+            "description": "A .NET 10 library that reads existing Crystal Reports .rpt files and renders PDFs without the SAP runtime.",
             "url": "https://reporter.narity.com/",
-            "image": "https://narity.com/assets/og-reporter.png",
+            "image": "https://reporter.narity.com/assets/og-reporter.png",
             "applicationCategory": "DeveloperApplication",
             "operatingSystem": "Windows, macOS, Linux",
             "softwareRequirements": ".NET 10",
@@ -67,7 +67,7 @@
         </button>
         <nav class="nav">
           <a class="nav-link" href="/">Home</a>
-          <a class="nav-link active" href="/reporter/" aria-current="page">Reporter</a>
+          <a class="nav-link active" href="/reporter/" aria-current="page">Crystal Reports migration</a>
           <a class="nav-link" href="/#contact">Contact</a>
         </nav>
       </div>
@@ -79,12 +79,13 @@
           <div class="hero-content">
             <h1>Crystal Reports migration, without rewriting your reports</h1>
             <p class="lead">
-              Reporter is a Crystal Reports alternative for .NET. It reads the <code>.rpt</code> files you already
-              have and renders the same PDFs on .NET 10, on Windows, macOS, or Linux, with no SAP runtime.
+              Narity moves your applications off the Crystal Reports runtime with Narity Reporter, a Crystal
+              Reports alternative for .NET. It reads the <code>.rpt</code> files you already have and renders PDFs
+              on .NET 10, on Windows, macOS, or Linux, with no SAP runtime.
             </p>
             <div class="cta">
-              <a class="btn primary" href="https://reporter.narity.com/demo.html">Try it on your report</a>
-              <a class="btn" href="https://reporter.narity.com/register.html">Start a 30-day evaluation</a>
+              <a class="btn primary" href="/#contact">Plan your migration</a>
+              <a class="btn" href="https://reporter.narity.com/demo.html">Try it on your report</a>
             </div>
           </div>
         </div>
@@ -100,9 +101,9 @@
             </p>
           </div>
           <ul class="checklist">
-            <li>SAP discontinued the 32-bit Crystal Reports runtime for .NET in December 2025.</li>
-            <li>Mainstream maintenance of Crystal Reports for Visual Studio ends after 2027.</li>
-            <li>The SAP runtime runs on Windows only, so reporting holds your servers there.</li>
+            <li>SAP stopped supporting the 32-bit Crystal Reports .NET runtime after December 31, 2025.</li>
+            <li>Crystal Reports for Visual Studio runs on .NET Framework only. SAP has no plans to support later .NET versions.</li>
+            <li>The SAP .NET runtime runs on Windows only, so reporting holds your servers there.</li>
             <li>A migration to another report tool means redesigning each report by hand.</li>
           </ul>
         </div>
@@ -110,15 +111,15 @@
 
       <section>
         <div class="container">
-          <h2 class="section-title">How Reporter replaces it</h2>
+          <h2 class="section-title">How Narity Reporter replaces it</h2>
           <div class="grid three">
             <div class="card">
               <h3>Reads .rpt files directly</h3>
               <p>A clean-room decoder reads the Crystal Reports file format itself. No SAP runtime, no conversion step.</p>
             </div>
             <div class="card">
-              <h3>Renders the same PDF</h3>
-              <p>Fonts, groups, formulas, subreports, and page breaks are placed to the twip and checked against the PDF that Crystal produced.</p>
+              <h3>Renders PDF you can check</h3>
+              <p>It lays out fonts, groups, formulas, subreports, and page breaks. Compare each page with the PDF that Crystal produces before you switch.</p>
             </div>
             <div class="card">
               <h3>Reads your live data</h3>
@@ -130,7 +131,7 @@
             </div>
             <div class="card">
               <h3>Keeps your formulas</h3>
-              <p>Crystal formulas run as written. A function the engine does not support yet is named before you go live.</p>
+              <p>It evaluates your Crystal formulas with no rewrite. It names each function it does not support yet, before you go live.</p>
             </div>
             <div class="card">
               <h3>Gives you the definition</h3>
@@ -146,15 +147,15 @@
           <div class="grid three steps">
             <div class="card">
               <h3>Measure</h3>
-              <p>Run your reports through Reporter and compare every page with the PDFs Crystal produces today.</p>
+              <p>Run your reports through Narity Reporter and compare every page with the PDFs Crystal produces today.</p>
             </div>
             <div class="card">
               <h3>Close the gaps</h3>
-              <p>Narity fixes what differs, report by report, until the pages match.</p>
+              <p>Narity fixes the differences, report by report, until the output reaches the accuracy you require.</p>
             </div>
             <div class="card">
               <h3>Switch</h3>
-              <p>Replace the Crystal runtime calls in your application with Reporter's .NET API, then retire the SAP runtime.</p>
+              <p>Replace the Crystal runtime calls in your application with the Narity Reporter .NET API, then retire the SAP runtime.</p>
             </div>
           </div>
         </div>
@@ -164,8 +165,9 @@
         <div class="container">
           <h2 class="section-title">Plan your migration</h2>
           <p class="lead-alt">
-            Tell us how many reports you have and where they run. Or read more about
-            <a href="https://reporter.narity.com/">Reporter, the Crystal Reports alternative for .NET</a>.
+            Tell us how many reports you have and where they run. To migrate on your own, follow the
+            <a href="https://reporter.narity.com/crystal-reports-modern-dotnet.html">Crystal Reports .NET migration guide</a>
+            for <a href="https://reporter.narity.com/">Narity Reporter</a>.
           </p>
           <div class="cta">
             <a class="btn primary" href="/#contact">Talk to Narity</a>
@@ -179,6 +181,9 @@
       <div class="container row between center">
         <small>&copy; 2026 Narity Limited. All rights reserved.</small>
         <small><a class="footer-link" href="/privacy.html">Privacy</a></small>
+      </div>
+      <div class="container footer-note">
+        <small>SAP and Crystal Reports are the trademarks or registered trademarks of SAP SE or its affiliates in Germany and in other countries. Narity Reporter is not affiliated with or endorsed by SAP.</small>
       </div>
     </footer>
     <script>
